@@ -10,7 +10,8 @@
 		"salud": 0,
 		"esfuerzo": 3,
 		"armas": ["Bastón", "Clava", "Martillo ligero", "Mayal", "Maza", "Porra", "Garrote", "Lucero del alba", "Gran clava"],
-		"armaduras": ["Pechera de algodón", "Armadura de tela", "Armadura acolchada", "Armadura de cuero", "Cuero tachonado", "Armadura de pieles", "Camisote de mallas", "Cota de anillas", "Cota de escamas", "Coraza"]
+		"armaduras": ["Pechera de algodón", "Armadura de tela", "Armadura acolchada", "Armadura de cuero", "Cuero tachonado", "Armadura de pieles", "Camisote de mallas", "Cota de anillas", "Cota de escamas", "Coraza"],
+		"poderes": []
 	},
 	"Guerrero": {
 		"conceptos": [
@@ -23,7 +24,8 @@
 		"salud": 1,
 		"esfuerzo": 4,
 		"armas": ["Cimitarra", "Clava", "Daga", "Espada corta", "Hacha de mano", "Hoz", "Martillo ligero", "Bastón", "Espada larga", "Espada ropera", "Guantelete armado", "Hacha de batalla", "Jabalina", "Lanza", "Látigo", "Lucero del alba", "Martillo de guerra", "Mayal", "Maza", "Alabarda", "Espadón", "Gran clava", "Gran hacha", "Guadaña", "Guja", "Lanza de caballería", "Tridente", "Arco corto", "Arco largo", "Ballesta de mano", "Ballesta de repetición", "Ballesta ligera", "Ballesta pesada", "Cerbatana", "Dardo", "Honda", "Yumi"],
-		"armaduras": ["Pechera de algodón", "Armadura de tela", "Armadura acolchada", "Armadura de cuero", "Cuero tachonado", "Armadura de pieles", "Camisote de mallas", "Cota de anillas", "Cota de escamas", "Coraza", "Cota de mallas", "Armadura de bandas", "Armadura parcial de placas", "Armadura completa de placas"]
+		"armaduras": ["Pechera de algodón", "Armadura de tela", "Armadura acolchada", "Armadura de cuero", "Cuero tachonado", "Armadura de pieles", "Camisote de mallas", "Cota de anillas", "Cota de escamas", "Coraza", "Cota de mallas", "Armadura de bandas", "Armadura parcial de placas", "Armadura completa de placas"],
+		"poderes": []
 		
 	},
 	"Mago": {
@@ -37,7 +39,8 @@
 		"salud": -1,
 		"esfuerzo": 2,
 		"armas": ["Bastón", "Daga", "Honda"],
-		"armaduras": ["Pechera de algodón", "Armadura de tela"]
+		"armaduras": ["Pechera de algodón", "Armadura de tela"],
+		"poderes": []
 	},
 	"Ladrón": {
 		"conceptos": [
@@ -50,6 +53,7 @@
 		"salud": -1,
 		"esfuerzo": 4,
 		"armas": ["Cimitarra", "Clava", "Daga", "Espada corta", "Hacha de mano", "Hoz", "Martillo ligero", "Bastón", "Espada larga", "Espada ropera", "Guantelete armado", "Hacha de batalla", "Jabalina", "Lanza", "Látigo", "Lucero del alba", "Martillo de guerra", "Mayal", "Maza", "Arco corto", "Arco largo", "Ballesta de mano", "Ballesta de repetición", "Ballesta ligera", "Ballesta pesada", "Cerbatana", "Dardo", "Honda", "Yumi"],
-		"armaduras": ["Pechera de algodón", "Armadura de tela", "Armadura acolchada", "Armadura de cuero"]
+		"armaduras": ["Pechera de algodón", "Armadura de tela", "Armadura acolchada", "Armadura de cuero"],
+		"poderes": []
 	}
 }

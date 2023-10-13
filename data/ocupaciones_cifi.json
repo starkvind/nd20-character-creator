@@ -1,0 +1,83 @@
+{
+	"Diplomático": {
+		"conceptos": [
+			"Embajador galáctico", "Negociador interplanetario", "Mensajero estelar",
+			"Enlace cultural", "Arbitro interestelar", "Diplomático de élite",
+			"Facilitador de tratados", "Mediador político", "Representante diplomático", "Conciliador espacial"
+		],
+		"atributo_favorito": ["Mente", "Presencia"],
+		"talentos": ["Oratoria exquisita", "Preparación", "Séquito personal"],
+		"salud": -1,
+		"esfuerzo": 3,
+		"armas": ["Fusil láser compacto", "Pistola de plasma", "Daga de energía", "Bastón sónico"],
+		"armaduras": ["Traje diplomático a medida", "Chaleco de seguridad con blindaje ligero", "Escudo personal de energía"],
+		"poderes": []
+	},
+	"Eudemonista": {
+		"conceptos": [
+			"Guerrero errante", "Filósofo de combate", "Guardián de valores",
+			"Campeón de la justicia", "Espada de los oprimidos", "Paladín solitario",
+			"Defensor de la moral", "Vigilante incorruptible", "Custodio de la armonía", "Cazador de la oscuridad"
+		],
+		"atributo_favorito": ["Fuerza", "Resistencia", "Intuición"],
+		"talentos": ["Armamento filosofal", "Entelequia", "Estoicismo"],
+		"salud": 0,
+		"esfuerzo": 4,
+		"armas": ["Espada láser (2d4)", "Martillo vibrónico (1d10)", "Lanza de plasma cristalino (1d8)", "Katana lumínico (1d10)"],
+		"armaduras": [],
+		"poderes": ["Técnicas de combate"]
+	},
+	"Forajido": {
+		"conceptos": [
+			"Ladrón galáctico", "Contrabandista hábil", "Traficante de información",
+			"Mercenario despiadado", "Espía maestro", "Piloto temerario",
+			"Estafador intergaláctico", "Cazarrecompensas astuto", "Pistolero solitario", 
+			"Pirata espacial"
+		],
+		"atributo_favorito": ["Agilidad", "Presencia"],
+		"talentos": ["Pasado turbulento", "Suerte del tonto"],
+		"salud": -1,
+		"esfuerzo": 4,
+		"armas": ["Bláster", "Cuchillo de contrabandista", "Pistola de rayos", "Navaja láser"],
+		"armaduras": ["Mono de contrabandista", "Chaleco antibalas ligero", "Traje de camuflaje", "Túnica de sigilo"]
+	},
+	"Psion": {
+		"conceptos": [
+			"Vidente de la mente", "Telequinético prodigioso", "Sanador psíquico",
+			"Controlador mental", "Astrónomo mental", "Teletransportador cósmico",
+			"Telepático empático", "Manifestador de pesadillas", "Oráculo interdimensional", "Maestro del tiempo"
+		],
+		"atributo_favorito": ["Mente"],
+		"talentos": ["Entereza mental", "Someter el cuerpo"],
+		"salud": -1,
+		"esfuerzo": 2,
+		"armas": ["Daga psíquica", "Pistola mental", "Cetro de la mente", "Espada psiónica"],
+		"armaduras": []
+	},
+	"Soldado": {
+		"conceptos": [
+			"Máquina de guerra", "Táctico experto", "Mercenario implacable",
+			"Especialista en demoliciones", "Comandante de asalto", "Francotirador letal",
+			"Guardaespaldas profesional", "Piloto de mecha", "Instructor de combate", "Comandante de pelotón"
+		],
+		"atributo_favorito": ["Fuerza", "Agilidad", "Resistencia"],
+		"talentos": ["Especialista en armamento", "Llamada del deber", "Tiempo bala"],
+		"salud": 2,
+		"esfuerzo": 4,
+		"armas": ["Pistola láser", "Rifle de plasma", "Espada de energía", "Lanzacohetes", "Amplificador de partículas", "Cañón de fusión", "Escopeta de dispersión"],
+		"armaduras": ["Armadura táctica modular", "Traje de batalla reforzado", "Exotraje de combate", "Armadura de asalto pesada"]
+	},
+	"Tecnópata": {
+		"conceptos": [
+			"Maestro del hackeo", "Ingeniero cibernético", "Pirata informático",
+			"Técnico de drones", "Programador de élite", "Hacker corporativo",
+			"Guardián de la red", "Cazarrecompensas tecnológico", "Infiltrador digital", "Controlador de IA"
+		],
+		"atributo_favorito": ["Agilidad", "Mente"],
+		"talentos": ["Hacker", "Unión cibernética"],
+		"salud": 0,
+		"esfuerzo": 3,
+		"armas": ["Pistola láser", "Daga de energía", "Pulso electromagnético", "Cañón de plasma", "Arco de inducción"],
+		"armaduras": ["Traje de camuflaje óptico", "Traje blindado de sigilo", "Exotraje de infiltración"]
+	}
+}

@@ -10,8 +10,13 @@
 		<h1>Generador de Personajes</h1>
 		<form id="generar-form" method="POST" action="/generar_personaje">
 			<input type="number" id="nivel" name="nivel" min="1" max="30" placeholder="Nivel">
+			<select id="opciones" name="opciones">
+				<option value="nd20">nd20</option>
+				<option value="nd20_cifi">nd20_cifi</option>
+			</select>
 			<button type="submit" id="generate-button">Generar Personaje</button>
 		</form>
+
 		<div id="resultado">
 			<!-- Aquí se mostrará el resultado generado sin recargar la página -->
 		</div>
@@ -27,7 +32,10 @@ $(document).ready(function() {
         $.ajax({
             type: 'POST',
             url: '/generar_personaje',
-            data: {nivel: document.getElementById("nivel").value},
+            data: {
+				nivel: document.getElementById("nivel").value,
+				opciones: document.getElementById("opciones").value
+			},
 			// Dentro de la función de éxito de tu AJAX en index.html
 			success: function(data) {
 				// Actualizar el contenido del personaje en el HTML
@@ -72,7 +80,7 @@ $(document).ready(function() {
 								<li><strong>Arma:</strong> ${data.personaje.Arma}</li>
 								<li><strong>Armadura:</strong> ${data.personaje.Armadura}</li>
 								<li><strong>Objeto:</strong> ${data.personaje.Objeto}</li>
-								<li><strong>Riqueza inicial:</strong> ${data.personaje.Riqueza} monedas de oro</li>
+								<li><strong>Riqueza inicial:</strong> ${data.personaje.Riqueza}</li>
 							</ul>
 							<!-- ${data.texto_generado}-->
 						</div>

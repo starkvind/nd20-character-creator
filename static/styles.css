@@ -41,7 +41,25 @@ button {
     border-radius: 5px;
 }
 
-#character-info, #character-attributes, #character-resources, #character-talents {
+/* Estilo actualizado para el select y las opciones */
+select {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+select:focus {
+    outline: none;
+}
+
+option {
+    padding: 10px;
+}
+
+#character-info,
+#character-attributes,
+#character-resources,
+#character-talents {
     background-color: #fff;
     border: 1px solid #ddd;
     padding: 20px;
@@ -49,7 +67,10 @@ button {
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-#character-info h2, #character-attributes h3, #character-resources h3, #character-talents h3 {
+#character-info h2,
+#character-attributes h3,
+#character-resources h3,
+#character-talents h3 {
     font-size: 24px;
     margin-bottom: 10px;
 }

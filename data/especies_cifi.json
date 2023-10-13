@@ -1,0 +1,148 @@
+{
+	"Humano natural": {
+		"talentos": ["Buen desarrollo"],
+		"conceptos": [
+			"Explorador de nuevos mundos",
+			"Defensor de la Tierra natal",
+			"Pionero en la frontera estelar",
+			"Diplomático intergaláctico",
+			"Piloto experto en naves espaciales",
+			"Científico en busca de conocimiento",
+			"Colono en planetas remotos",
+			"Guerrero en la lucha por la humanidad",
+			"Espía en el universo infinito",
+			"Líder en la expansión galáctica"
+		],
+		"salud": "d6",
+		"movimiento": 6,
+		"objetos_emocionales": [
+			"Reloj antiguo de la Tierra",
+			"Fotografía familiar desgastada",
+			"Diario de un ancestro perdido",
+			"Medalla de honor de un conflicto pasado",
+			"Libro clásico de la literatura terrestre"
+		],
+		"nombres": [
+			"Adam", "Eva", "Noah", "Sarah", "John",
+			"Emily", "Michael", "Abigail", "William", "Sophia",
+			"James", "Olivia", "Daniel", "Isabella", "David",
+			"Emma", "Joseph", "Ava", "Jacob", "Mia"
+		]
+	},
+	"Humano aumentado": {
+		"atributo_requisito": "Presencia",
+		"atributo_valor": 7,
+		"talentos": ["Tolerancia a la mejora"],
+		"conceptos": [
+			"Superviviente mejorado",
+			"Custodio de la perfección genética",
+			"Vigilante de la humanidad mejorada",
+			"Ingeniero de la evolución artificial",
+			"Defensor de la superioridad genética",
+			"Ejecutor de la voluntad biotecnológica",
+			"Piloto de la vanguardia mejorada",
+			"Estratega de la supremacía humana",
+			"Explorador de la inmortalidad artificial",
+			"Guardián de la nueva era de la humanidad"
+		],
+		"salud": "d8",
+		"movimiento": 6,
+		"objetos_emocionales": [
+			"Primer dispositivo de mejora genética",
+			"Fotografía de laboratorio con el equipo científico",
+			"Diario de experimentos genéticos",
+			"Medalla por logros sobresalientes en la modificación humana",
+			"Libro de teorías avanzadas de ingeniería genética"
+		],
+		"nombres": [
+			"Nexus", "Aria", "Vesper", "Titan", "Athena",
+			"Helios", "Gaia", "Phoenix", "Cyber", "Selene",
+			"Orion", "Iris", "Morpheus", "Electra", "Aether",
+			"Cassius", "Pandora", "Apollo", "Daphne", "Damon"
+		]
+	},
+	"Gruul bruto": {
+		"atributo_requisito": "Fuerza",
+		"atributo_valor": 7,
+		"talentos": ["Corpulencia", "Saña primitiva"],
+		"conceptos": [
+			"Guerrero feroz", "Cazador de recompensas estelares", "Líder de los desheredados",
+			"Mercenario implacable", "Protector del linaje gruul", "Exiliado en busca de redención"
+		],
+		"salud": "d10",
+		"movimiento": 5,
+		"objetos_emocionales": [
+			"Diente del primer enemigo vencido",
+			"Fragmento del arma ancestral gruul",
+			"Trofeo de caza más preciado",
+			"Amuleto de liderazgo tribal"
+		],
+		"nombres": [
+			"Korg", "Grishak", "Thraak", "Vornak", "Krulg",
+			"Hraknar", "Thrakul", "Borak", "Garnak", "Vrakul"
+		]
+	},
+	"Gruul zángano": {
+		"atributo_requisito": "Mente",
+		"atributo_valor": 7,
+		"talentos": ["Sinapsis perladas", "Rapidez"],
+		"conceptos": [
+			"Visionario exiliado", "Mártir de la colmena", "Explorador solitario de la galaxia",
+			"Mente maestra desacreditada", "Científico gruul renegado"
+		],
+		"salud": "d6",
+		"movimiento": 7,
+		"objetos_emocionales": [
+			"Primer ejemplar de la literatura gruul",
+			"Esquema de la ingeniería reproductiva gruul",
+			"Fragmento de tecnología descartada gruul",
+			"Vínculo psíquico con la colmena"
+		],
+		"nombres": [
+			"Zirak", "Kalthur", "Jyrrak", "Myrthul", "Xyrnak",
+			"Varyk", "Zyrthak", "Myrak", "Jyrthul", "Zarak"
+		]
+	},
+	"Sylph mindari": {
+		"atributo_requisito": "Intuición",
+		"atributo_valor": 7,
+		"talentos": ["Vínculo psiónico", "Visión en la oscuridad"],
+		"conceptos": [
+			"Sabio consejero estelar", "Guardián de la armonía universal", "Custodio de la biblioteca cósmica",
+			"Elegido de los astros", "Explorador del espacio-tiempo"
+		],
+		"salud": "d4",
+		"movimiento": 6,
+		"objetos_emocionales": [
+			"Reliquia psiónica ancestral",
+			"Amuleto del conocimiento universal",
+			"Fragmento de estrella caída",
+			"Artefacto de la antigua Sylph"
+		],
+		"nombres": [
+			"Zephyrus", "Astraeus", "Oberon", "Hyperion", "Aether",
+			"Selene", "Rhea", "Cassiopeia", "Theia", "Eos"
+		]
+	},
+	"Sylph zanshi": {
+		"atributo_requisito": "Fuerza",
+		"atributo_valor": 7,
+		"talentos": ["Ánimo", "Sangre del cosmos"],
+		"conceptos": [
+			"General estelar", "Protectora de la Unión sylph", "Ejecutora de la voluntad cósmica",
+			"Campeona de la justicia galáctica", "Guardiana de los portales dimensionales"
+		],
+		"salud": "d8",
+		"movimiento": 6,
+		"objetos_emocionales": [
+			"Espada cósmica ancestral",
+			"Amuleto de liderazgo estelar",
+			"Armadura forjada con energía estelar",
+			"Mantón tejido con hilos de constelaciones"
+		],
+		"nombres": [
+			"Lyra", "Astra", "Vega", "Sirius", "Oberon",
+			"Andromeda", "Bellatrix", "Polaris", "Rigel", "Especthra"
+		]
+	}
+}

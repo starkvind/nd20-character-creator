@@ -12,6 +12,7 @@ def index():
 def generar_personaje():
     # Obtén el nivel del formulario (si se proporciona)
     nivel = request.form.get('nivel')
+    opciones = request.form.get('opciones')
     if nivel is not None and nivel.isdigit():
         nivel = int(nivel)
     else:
@@ -19,7 +20,7 @@ def generar_personaje():
     #print("Generando un personaje de nivel ", nivel)
     # Llama a tus funciones de generación de personajes aquí
     # Pasa el nivel como argumento
-    resultado = create_character(nivel)
+    resultado = create_character(nivel, False, opciones)
     
     # Devuelve el resultado en formato JSON incluyendo el personaje y el texto generado
     response = {

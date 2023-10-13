@@ -1,14 +1,26 @@
 import random
 import json
 
-def create_character(level = 1, echo_level_ups = False):
+def create_character(level = 1, echo_level_ups = False, game="nd20"):
+
+    # Comprobamos qué fichero JSON vamos a cargar.
+    if game == "nd20_cifi":
+        ocupaciones_file = 'ocupaciones_cifi'
+    else:
+        ocupaciones_file = 'ocupaciones'
+    
+    # Lo mismo para las especies.
+    if game == "nd20_cifi":
+        especies_file = 'especies_cifi'
+    else:
+        especies_file = 'especies'
 
     # Cargar el archivo JSON de Ocupaciones
-    with open('data/ocupaciones.json', 'r', encoding='utf-8') as file:
+    with open('data/' + ocupaciones_file + '.json', 'r', encoding='utf-8') as file:
         ocupaciones = json.load(file)
 
     # Cargar el archivo JSON de Especies
-    with open('data/especies.json', 'r', encoding='utf-8') as file:
+    with open('data/' + especies_file + '.json', 'r', encoding='utf-8') as file:
         especies = json.load(file)
 
     def calcular_dado_salud_base(dado_base, modificacion):
