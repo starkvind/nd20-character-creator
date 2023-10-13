@@ -1,0 +1,55 @@
+{
+	"Clérigo": {
+		"conceptos": [
+			"Devoto de la luz", "Guardián de los templos", "Sanador de almas",
+			"Inquisidor de la fe", "Predicador itinerante", "Orador sagrado",
+			"Misionero de la divinidad", "Custodio de reliquias", "Exorcista benevolente", "Guía espiritual"
+		],
+		"atributo_favorito": ["Intuición"],
+		"talentos": ["Expulsar muertos vivientes", "Fortaleza piadosa"],
+		"salud": 0,
+		"esfuerzo": 3,
+		"armas": ["Bastón", "Clava", "Martillo ligero", "Mayal", "Maza", "Porra", "Garrote", "Lucero del alba", "Gran clava"],
+		"armaduras": ["Pechera de algodón", "Armadura de tela", "Armadura acolchada", "Armadura de cuero", "Cuero tachonado", "Armadura de pieles", "Camisote de mallas", "Cota de anillas", "Cota de escamas", "Coraza"]
+	},
+	"Guerrero": {
+		"conceptos": [
+			"Valiente defensor", "Cazador de monstruos", "Espadachín errante",
+			"Caballero en busca de honor", "Guardián de la justicia", "Bárbaro implacable",
+			"Gladiador de la arena", "Arquero de élite", "Escudero leal", "Maestro de la espada"
+		],
+		"atributo_favorito": ["Fuerza", "Agilidad", "Resistencia"],
+		"talentos": ["Recuperación", "Brío musculoso", "Sacrificio de escudo"],
+		"salud": 1,
+		"esfuerzo": 4,
+		"armas": ["Cimitarra", "Clava", "Daga", "Espada corta", "Hacha de mano", "Hoz", "Martillo ligero", "Bastón", "Espada larga", "Espada ropera", "Guantelete armado", "Hacha de batalla", "Jabalina", "Lanza", "Látigo", "Lucero del alba", "Martillo de guerra", "Mayal", "Maza", "Alabarda", "Espadón", "Gran clava", "Gran hacha", "Guadaña", "Guja", "Lanza de caballería", "Tridente", "Arco corto", "Arco largo", "Ballesta de mano", "Ballesta de repetición", "Ballesta ligera", "Ballesta pesada", "Cerbatana", "Dardo", "Honda", "Yumi"],
+		"armaduras": ["Pechera de algodón", "Armadura de tela", "Armadura acolchada", "Armadura de cuero", "Cuero tachonado", "Armadura de pieles", "Camisote de mallas", "Cota de anillas", "Cota de escamas", "Coraza", "Cota de mallas", "Armadura de bandas", "Armadura parcial de placas", "Armadura completa de placas"]
+		
+	},
+	"Mago": {
+		"conceptos": [
+			"Maestro de las artes arcanas", "Investigador de lo desconocido", "Manipulador de la realidad",
+			"Hechicero elemental", "Ilusionista astuto", "Nigromante oscuro",
+			"Invocador de criaturas", "Alquimista hábil", "Conjurador de tormentas", "Guardián de conocimientos ancestrales"
+		],
+		"atributo_favorito": ["Mente"],
+		"talentos": ["Bagaje de arcanista", "Meditación"],
+		"salud": -1,
+		"esfuerzo": 2,
+		"armas": ["Bastón", "Daga", "Honda"],
+		"armaduras": ["Pechera de algodón", "Armadura de tela"]
+	},
+	"Ladrón": {
+		"conceptos": [
+			"Experto en el arte del sigilo", "Ladrón de tesoros perdidos", "Maestro del engaño",
+			"Espía maestro", "Pirata astuto", "Aventurero astuto",
+			"Asesino en las sombras", "Forajido sin ley", "Saboteador hábil", "Contrabandista audaz"
+		],
+		"atributo_favorito": ["Agilidad"],
+		"talentos": ["Preparación", "Sutileza"],
+		"salud": -1,
+		"esfuerzo": 4,
+		"armas": ["Cimitarra", "Clava", "Daga", "Espada corta", "Hacha de mano", "Hoz", "Martillo ligero", "Bastón", "Espada larga", "Espada ropera", "Guantelete armado", "Hacha de batalla", "Jabalina", "Lanza", "Látigo", "Lucero del alba", "Martillo de guerra", "Mayal", "Maza", "Arco corto", "Arco largo", "Ballesta de mano", "Ballesta de repetición", "Ballesta ligera", "Ballesta pesada", "Cerbatana", "Dardo", "Honda", "Yumi"],
+		"armaduras": ["Pechera de algodón", "Armadura de tela", "Armadura acolchada", "Armadura de cuero"]
+	}
+}

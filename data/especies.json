@@ -1,0 +1,197 @@
+{
+	"Elfo agreste": {
+		"atributo_requisito": "Agilidad",
+		"atributo_valor": 7,
+		"talentos": ["Linaje feérico", "Rapidez"],
+		"conceptos": [
+			"Guardián del bosque", "Cazador de criaturas mágicas", "Embajador feérico",
+			"Maestro arquero", "Guardián de secretos antiguos", "Explorador de bosques encantados",
+			"Sanador de la naturaleza", "Domador de bestias", "Vidente de los árboles", "Artesano élfico"
+		],
+		"salud": "d8",
+		"movimiento": 7,
+		"objetos_emocionales": [
+				"Hoja de árbol ancestral",
+				"Colgante de cristal feérico",
+				"Piedra lunar misteriosa",
+				"Flor dorada del bosque",
+				"Reliquia de la tribu élfica"
+			],
+		"nombres": [
+			"Thalindra", "Aelarion", "Lirelia", "Faelar", "Celeborn",
+			"Arwen", "Legolas", "Galen", "Mithrandir", "Elariana",
+			"Eldarion", "Elandrin", "Elorin", "Galadriel", "Arador",
+			"Lorien", "Aranel", "Thranduil", "Caladwen", "Galathil"
+		]
+	},
+	"Enano montañés": {
+		"atributo_requisito": "Resistencia",
+		"atributo_valor": 7,
+		"talentos": ["Corpulencia", "Visión en la oscuridad"],
+		"conceptos": [
+			"Forjador de las profundidades", "Explorador de las montañas", "Defensor de las rutas comerciales",
+			"Rey bajo la montaña", "Minero intrépido", "Constructor de fortalezas",
+			"Explorador de grutas", "Guardián de tesoros", "Explorador de cavernas", "Maestro herrero"
+		],
+		"salud": "d10",
+		"movimiento": 5,
+		"objetos_emocionales": [
+				"Hacha forjada por su abuelo",
+				"Piedra preciosa de las profundidades",
+				"Gema de la montaña",
+				"Martillo de guerra ancestral",
+				"Pergamino de runas enano"
+			],
+		"nombres": [
+			"Thrain", "Balin", "Durin", "Gimli", "Dwalin",
+			"Borin", "Oin", "Fili", "Kili", "Thorin",
+			"Gloin", "Bombur", "Dori", "Nori", "Ori",
+			"Bifur", "Bofur", "Gimilkhad", "Thrainin", "Skaldir"
+		]
+	},
+	"Humano común": {
+		"talentos": ["Buen desarrollo"],
+		"conceptos": [
+			"Héroe del pueblo", "Aventurero sin igual", "Guardián de la aldea",
+			"Caballero noble", "Comerciante próspero", "Intrépido viajero",
+			"Vidente de sueños", "Músico ambulante", "Explorador de tierras lejanas", "Artesano hábil"
+		],
+		"salud": "d6",
+		"movimiento": 6,
+		"objetos_emocionales": [
+				"Reloj de bolsillo de la familia",
+				"Diario de viaje ancestral",
+				"Espada heredada de un antepasado",
+				"Medalla de honor de la aldea",
+				"Retrato de familia"
+			],
+		"nombres": [
+			"John", "Emily", "David", "Anna", "Michael",
+			"Sarah", "Daniel", "Sophia", "Matthew", "Olivia",
+			"William", "Ava", "James", "Emma", "Benjamin",
+			"Mia", "Jacob", "Ella", "Liam", "Grace"
+		]
+	},
+	"Mediano amable": {
+		"atributo_requisito": "Presencia",
+		"atributo_valor": 7,
+		"talentos": ["Baja estatura", "¡Sálvese quien pueda!"],
+		"conceptos": [
+			"Cocinero extraordinario", "Guardián de la despensa", "Narrador de cuentos",
+			"Héroe del jardín", "Maestro de las festividades", "Defensor de la paz",
+			"Embajador de la amistad", "Buscador de la diversión", "Hacedor de tratos", "Explorador curioso"
+		],
+		"salud": "d4",
+		"movimiento": 5,
+		"objetos_emocionales": [
+				"Receta secreta de la abuela",
+				"Relato épico de su pueblo",
+				"Caja de pastelitos",
+				"Cuentos de hadas ilustrados",
+				"Piedra de la suerte"
+			],
+		"nombres": [
+			"Frosko", "Balbo", "Samuel", "Perryn", "Merlungo",
+			"Rosie", "Hamfast", "Primrose", "Daisy", "Bungo",
+			"Hugo", "Rosa", "Estella", "Ruby", "Wilbur",
+			"Drogo", "Gilly", "Rory", "Lily", "Took"
+		]
+	},
+	"Gnomo urbano": {
+		"atributo_requisito": "Intuición",
+		"atributo_valor": 7,
+		"talentos": ["Baja estatura", "Visión en la oscuridad"],
+		"conceptos": [
+			"Ingeniero brillante", "Inventor de artilugios", "Explorador de alcantarillas",
+			"Maestro relojero", "Conocedor de máquinas", "Sabio de la ciudad",
+			"Constructor de gadgets", "Reciclador ingenioso", "Navegante de alcantarillas", "Experto en artilugios"
+		],
+		"salud": "d4",
+		"movimiento": 5,
+		"objetos_emocionales": [
+				"Invento personalizado",
+				"Antiguo mapa de alcantarillas",
+				"Reloj de cuco encantado",
+				"Gafas de aumento mágicas",
+				"Bolígrafo de tinta inagotable"
+			],
+		"nombres": [
+			"Engranajeza", "Chispastrépito", "Varitacentella", "Explorrosivo", "Dientorcido",
+			"Tuercaferoz", "Silbichispa", "Ruecamolida", "Engranatillo", "Cimacreante",
+			"Estallidochispa", "Chisparreloj", "Barbasvapor", "Tuerbólido", "Rayotuerca",
+			"Silbavibrato", "Engranajante", "Estallidofusión", "Llamacandado", "Remachemetal"
+		]
+
+	},
+	"Semielfo": {
+		"talentos": ["Ánimo", "Herencia dual (SE)"],
+		"conceptos": [
+			"Diplomático de dos mundos", "Explorador de fronteras", "Buscador de respuestas",
+			"Elegido de dos razas", "Guardián de la paz", "Defensor de la armonía",
+			"Rastreador de antaño", "Negociador de alianzas", "Maestro de los secretos", "Traductor de culturas"
+		],
+		"salud": "d6",
+		"movimiento": 6,
+		"objetos_emocionales": [
+				"Amuleto de doble herencia",
+				"Piedra de portal ancestral",
+				"Collar de conchas marinas",
+				"Mapa de explorador de dos mundos",
+				"Reliquia de sus padres"
+			],
+		"nombres": [
+			"Aria", "Eldarion", "Arwen", "Eldarian", "Alandria",
+			"Thalia", "Elendil", "Galadran", "Thalorin", "Eloria",
+			"Elariel", "Caladwen", "Eldaril", "Sylvaris", "Elariana",
+			"Elorian", "Arandil", "Mirel", "Elarion", "Arandor"
+		]
+	},
+	"Orco común": {
+		"atributo_requisito": "Fuerza",
+		"atributo_valor": 7,
+		"talentos": ["Ira interna", "Saña primitiva"],
+		"conceptos": [
+			"Guerrero de la tribu", "Cazador de bestias", "Devastador en batalla",
+			"Campeón de la arena", "Líder de la horda", "Conquistador brutal",
+			"Destructor de fortalezas", "Sacrificio en el altar", "Cazador de trofeos", "Guardián de las tierras salvajes"
+		],
+		"salud": "d10",
+		"movimiento": 6,
+		"objetos_emocionales": [
+				"Trofeo de caza gigante",
+				"Colmillo de bestia vencida",
+				"Piedra de ritual tribal",
+				"Colgante de huesos",
+				"Rocas pintadas de guerra"
+			],
+		"nombres": [
+			"Grom", "Thok", "Drog", "Urga", "Gorruk",
+			"Gruk", "Narok", "Mogul", "Karg", "Ghork",
+			"Ruk", "Skar", "Gorza", "Hrok", "Thruk",
+			"Zorg", "Druk", "Kurzog", "Krash", "Lurzog"
+		]
+	},
+	"Semiorco": {
+		"talentos": ["Sed de sangre", "Herencia dual (SO)"],
+		"conceptos": [
+			"Campeón de la lucha libre", "Merodeador solitario", "Guardián de las ruinas",
+			"Jefe de la manada", "Ladrón de tesoros", "Cazador de monstruos",
+			"Explorador de desiertos", "Guardián de las arenas", "Infiltrado traicionero", "Destructor de imperios"
+		],
+		"salud": "d8",
+		"movimiento": 6,
+		"objetos_emocionales": [
+				"Espada de su padre",
+				"Gema misteriosa de ruinas antiguas",
+				"Máscara de batalla",
+				"Reliquia de la lucha libre",
+				"Trofeo de gladiador"
+			],
+		"nombres": [
+			"Grak", "Kara", "Hruk", "Dorn", "Gorruk",
+			"Ruk", "Skar", "Gorza", "Hrok", "Thruk",
+			"Zorg", "Druk", "Kurzog", "Krash", "Lurzog",
+			"Grog", "Burz", "Rog", "Morg", "Naz"
+		]
+	}
+}

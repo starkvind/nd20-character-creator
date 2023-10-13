@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Generador de Personajes</title>
+		<link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+	</head>
+	<body>
+		<h1>Generador de Personajes</h1>
+		<form id="generar-form" method="POST" action="/generar_personaje">
+			<input type="number" id="nivel" name="nivel" min="1" max="30" placeholder="Nivel">
+			<button type="submit" id="generate-button">Generar Personaje</button>
+		</form>
+		<div id="resultado">
+			<!-- Aquí se mostrará el resultado generado sin recargar la página -->
+		</div>
+	</body>
+</html>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+$(document).ready(function() {
+    // Manejar el formulario de Generar Personaje
+    $('form').submit(function(event) {
+        event.preventDefault(); // Evitar la recarga de la página
+        $.ajax({
+            type: 'POST',
+            url: '/generar_personaje',
+            data: {nivel: document.getElementById("nivel").value},
+			// Dentro de la función de éxito de tu AJAX en index.html
+			success: function(data) {
+				// Actualizar el contenido del personaje en el HTML
+				$('#resultado').html(`
+					<div id="character-container">
+						<div id="character-info">
+							<h2>Información del personaje</h2>
+							<ul>
+								<li><strong>Nombre:</strong> ${data.personaje.Nombre}</li>
+								<li><strong>Concepto:</strong> ${data.personaje.Concepto}</li>
+								<li><strong>Nivel:</strong> ${data.personaje.Nivel}</li>
+								<li><strong>Especie:</strong> ${data.personaje.Especie}</li>
+								<li><strong>Ocupación:</strong> ${data.personaje.Ocupacion}</li>
+							</ul>
+						</div>
+						<div id="character-attributes">
+							<h3>Atributos</h3>
+							<ul>
+								<li><strong>Fuerza:</strong> ${data.personaje.Atributos.Fuerza} (${20 - data.personaje.Atributos.Fuerza}+)${data.personaje.AtributoF === 'Fuerza' ? ' (*)' : ''}</li>
+								<li><strong>Agilidad:</strong> ${data.personaje.Atributos.Agilidad} (${20 - data.personaje.Atributos.Agilidad}+)${data.personaje.AtributoF === 'Agilidad' ? ' (*)' : ''}</li>
+								<li><strong>Resistencia:</strong> ${data.personaje.Atributos.Resistencia} (${20 - data.personaje.Atributos.Resistencia}+)${data.personaje.AtributoF === 'Resistencia' ? ' (*)' : ''}</li>
+								<li><strong>Mente:</strong> ${data.personaje.Atributos.Mente} (${20 - data.personaje.Atributos.Mente}+)${data.personaje.AtributoF === 'Mente' ? ' (*)' : ''}</li>
+								<li><strong>Intuición:</strong> ${data.personaje.Atributos.Intuición} (${20 - data.personaje.Atributos.Intuición}+)${data.personaje.AtributoF === 'Intuición' ? ' (*)' : ''}</li>
+								<li><strong>Presencia:</strong> ${data.personaje.Atributos.Presencia} (${20 - data.personaje.Atributos.Presencia}+)${data.personaje.AtributoF === 'Presencia' ? ' (*)' : ''}</li>
+							</ul>
+						</div>
+						<div id="character-resources">
+							<h3>Recursos</h3>
+							<ul>
+								<li><strong>Salud:</strong> ${data.personaje.Salud}</li>
+								<li><strong>Esfuerzo:</strong> ${data.personaje.Esfuerzo}</li>
+								<li><strong>Movimiento:</strong> ${data.personaje.Movimiento}</li>
+							</ul>
+							<h3>Talentos</h3>
+							<ul>
+								${data.personaje.Talentos.map(talento => `<li>${talento}</li>`).join('')}
+							</ul>
+						</div>
+						<div id="character-talents">
+							<h3>Equipo</h3>
+							<ul>
+								<li><strong>Arma:</strong> ${data.personaje.Arma}</li>
+								<li><strong>Armadura:</strong> ${data.personaje.Armadura}</li>
+								<li><strong>Objeto:</strong> ${data.personaje.Objeto}</li>
+								<li><strong>Riqueza inicial:</strong> ${data.personaje.Riqueza} monedas de oro</li>
+							</ul>
+							<!-- ${data.texto_generado}-->
+						</div>
+					</div>
+				`);
+			}
+
+        });
+    });
+});
+</script>
