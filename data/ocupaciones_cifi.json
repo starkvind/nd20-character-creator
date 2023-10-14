@@ -2,7 +2,7 @@
 	"Diplomático": {
 		"conceptos": [
 			"Embajador galáctico", "Negociador interplanetario", "Mensajero estelar",
-			"Enlace cultural", "Arbitro interestelar", "Diplomático de élite",
+			"Enlace cultural", "Árbitro interestelar", "Diplomático de élite",
 			"Facilitador de tratados", "Mediador político", "Representante diplomático", "Conciliador espacial"
 		],
 		"atributo_favorito": ["Mente", "Presencia"],
@@ -10,7 +10,7 @@
 		"salud": -1,
 		"esfuerzo": 3,
 		"armas": ["Fusil láser compacto", "Pistola de plasma", "Daga de energía", "Bastón sónico"],
-		"armaduras": ["Traje diplomático a medida", "Chaleco de seguridad con blindaje ligero", "Escudo personal de energía"],
+		"armaduras": ["Traje a medida", "Chaleco de seguridad con blindaje ligero", "Escudo personal de energía"],
 		"poderes": []
 	},
 	"Eudemonista": {
@@ -39,7 +39,8 @@
 		"salud": -1,
 		"esfuerzo": 4,
 		"armas": ["Bláster", "Cuchillo de contrabandista", "Pistola de rayos", "Navaja láser"],
-		"armaduras": ["Mono de contrabandista", "Chaleco antibalas ligero", "Traje de camuflaje", "Túnica de sigilo"]
+		"armaduras": ["Mono de contrabandista", "Chaleco antibalas ligero", "Traje de camuflaje", "Túnica de sigilo"],
+		"poderes": []
 	},
 	"Psion": {
 		"conceptos": [
@@ -52,7 +53,8 @@
 		"salud": -1,
 		"esfuerzo": 2,
 		"armas": ["Daga psíquica", "Pistola mental", "Cetro de la mente", "Espada psiónica"],
-		"armaduras": []
+		"armaduras": [],
+		"poderes": []
 	},
 	"Soldado": {
 		"conceptos": [
@@ -65,7 +67,8 @@
 		"salud": 2,
 		"esfuerzo": 4,
 		"armas": ["Pistola láser", "Rifle de plasma", "Espada de energía", "Lanzacohetes", "Amplificador de partículas", "Cañón de fusión", "Escopeta de dispersión"],
-		"armaduras": ["Armadura táctica modular", "Traje de batalla reforzado", "Exotraje de combate", "Armadura de asalto pesada"]
+		"armaduras": ["Armadura táctica modular", "Traje de batalla reforzado", "Exotraje de combate", "Armadura de asalto pesada"],
+		"poderes": []
 	},
 	"Tecnópata": {
 		"conceptos": [
@@ -78,6 +81,7 @@
 		"salud": 0,
 		"esfuerzo": 3,
 		"armas": ["Pistola láser", "Daga de energía", "Pulso electromagnético", "Cañón de plasma", "Arco de inducción"],
-		"armaduras": ["Traje de camuflaje óptico", "Traje blindado de sigilo", "Exotraje de infiltración"]
+		"armaduras": ["Traje de camuflaje óptico", "Traje blindado de sigilo", "Exotraje de infiltración"],
+		"poderes": []
 	}
 }

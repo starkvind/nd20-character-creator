@@ -5,15 +5,15 @@ def create_character(level = 1, echo_level_ups = False, game="nd20"):
 
     # Comprobamos qué fichero JSON vamos a cargar.
     if game == "nd20_cifi":
-        ocupaciones_file = 'ocupaciones_cifi'
-    else:
-        ocupaciones_file = 'ocupaciones'
-    
-    # Lo mismo para las especies.
-    if game == "nd20_cifi":
         especies_file = 'especies_cifi'
+        ocupaciones_file = 'ocupaciones_cifi'
+        nombre_dinero = 'Créditos'
+        especie_default = 'Humano natural'
     else:
         especies_file = 'especies'
+        ocupaciones_file = 'ocupaciones'
+        nombre_dinero = 'monedas de oro'
+        especie_default = 'Humano común'
 
     # Cargar el archivo JSON de Ocupaciones
     with open('data/' + ocupaciones_file + '.json', 'r', encoding='utf-8') as file:
@@ -111,14 +111,20 @@ def create_character(level = 1, echo_level_ups = False, game="nd20"):
         return atributos
 
     # Función para elegir especie aleatoriamente con requisitos de atributos
-    def elegir_especie(atributos):
-        especie = random.choice(list(especies.keys()))
+    def elegir_especie(atributos, especie_default = None):
+        if especie_default is not None:
+            especie = especie_default
+        else:
+            especie = random.choice(list(especies.keys()))
+            
         atributo_requisito = especies[especie].get("atributo_requisito")
         atributo_valor = especies[especie].get("atributo_valor", 0)
         dado_salud = especies[especie].get("salud")
         mov = especies[especie].get("movimiento")
 
         if atributo_requisito and atributos.get(atributo_requisito, 0) >= atributo_valor:
+            return especie, dado_salud, mov
+        elif especie_default is not None:
             return especie, dado_salud, mov
         else:
             return None, None, None
@@ -148,6 +154,12 @@ def create_character(level = 1, echo_level_ups = False, game="nd20"):
         armas_disponibles = ocupaciones[ocupacion]["armas"]
         armaduras_disponibles = ocupaciones[ocupacion]["armaduras"]
         lista_objeto_emocional = especies[especie]["objetos_emocionales"]
+        
+        if len(armas_disponibles) == 0:
+            armas_disponibles = ["Desarmado"]
+           
+        if len(armaduras_disponibles) == 0:
+            armaduras_disponibles = ["Ropa común"]
 
         if len(lista_objeto_emocional) == 0:
             lista_objeto_emocional = [
@@ -203,9 +215,19 @@ def create_character(level = 1, echo_level_ups = False, game="nd20"):
     # ------------------------------------------------------------------
     # Loop para asegurarse de que el personaje tiene una especie válida.
     # ------------------------------------------------------------------
+    especie_count = 0
     especie = None
     while especie is None:
+        if echo_level_ups:
+            print("Intentando generar una especie. Intento número", especie_count)
         especie, dado_salud, movimiento = elegir_especie(atributos)
+        if especie_count >= 5:
+            especie, dado_salud, movimiento = elegir_especie(atributos, especie_default)
+            if echo_level_ups:
+                print("Alcanzado el máximo de intentos. Pasando a por defecto", especie_default, ":", especie, dado_salud, movimiento)
+            break
+        else:
+            especie_count += 1
     # ------------------------------------------------------------------
     ocupacion, atributo_favorito, mod_salud, energia = elegir_ocupacion()
     # ------------------------------------------------------------------
@@ -219,14 +241,18 @@ def create_character(level = 1, echo_level_ups = False, game="nd20"):
     riqueza_inicial = generar_riqueza_inicial(level)
     arma, armadura, objeto_emocional = elegir_equipo(ocupacion, especie)
     # ------------------------------------------------------------------
-    modificacion = mod_salud  # Modificación (+1 para subir un rango, -1 para bajar)
+    # Modificación (+1 para subir un rango, -1 para bajar)
+    modificacion = mod_salud  
     nuevo_dado_salud = calcular_dado_salud_base(dado_salud, modificacion)
     valor_salud = calcular_salud(nuevo_dado_salud, level)
     # ------------------------------------------------------------------
     if level >= 12:
         energia += 1
     # ------------------------------------------------------------------
-    atributos_nuevos = mejorar_atributos(level, atributos, atributo_favorito, echo_level_ups)
+    atributos_nuevos = mejorar_atributos(
+            level, atributos, 
+            atributo_favorito, echo_level_ups
+        )
     # ------------------------------------------------------------------
     nombre = elegir_nombre(especie)  
     # ------------------------------------------------------------------
@@ -244,7 +270,7 @@ def create_character(level = 1, echo_level_ups = False, game="nd20"):
         "Esfuerzo": energia,
         "Movimiento": movimiento,
         "Talentos": talentos,
-        "Riqueza": riqueza_inicial,
+        "Riqueza": str(riqueza_inicial) + " " + nombre_dinero,
         "Arma": arma,
         "Armadura": armadura,
         "Objeto": objeto_emocional
